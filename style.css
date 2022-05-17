@@ -1,4 +1,39 @@
 .puppy-img {
-    width: 200px;
-    height: 200px;
-  }
+  width: 200px;
+  height: 200px;
+  transition: 2s;
+  animation-name: appear;
+  animation-duration: 3s;
+}
+
+.puppy-img:hover {
+transform: scale(1.5) rotate(45deg);
+filter: grayscale(100%);
+}
+
+@keyframes appear {
+0% {
+  width: 100px;
+  height: 100px;
+}
+50% {
+  width: 300px;
+  height: 300px;
+}
+100% {
+  width: 200px;
+  height: 200px;
+}
+}
+
+.puppy-link {
+color: green;
+}
+
+.puppy-link:visited {
+color: pink;
+}
+
+.puppy-link:hover {
+text-decoration: none;
+}
